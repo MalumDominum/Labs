@@ -3,7 +3,7 @@ import re
 
 
 def longer_than_num(number, words, result=0):
-    split = re.split(r'\W', words)
+    split = re.split(r'(?!’|\')\W', words)
     print (words)
     for i in split:
         letters = 0
